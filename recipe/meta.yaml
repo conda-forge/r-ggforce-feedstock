@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggforce_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggforce/ggforce_{{ version }}.tar.gz
-  sha256: 7ea6a74bcf75c475ee14d266c42713affdefedb7ca8d8bd2c96790be4161cef5
+  sha256: 75a4783e63895719bd7b17ba8c0a5f9c1b411f15878c91e2a208098cca4f3013
 
 build:
   merge_build_host: True  # [win]
