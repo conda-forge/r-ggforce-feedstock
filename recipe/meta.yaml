@@ -22,17 +22,8 @@ build:
 requirements:
   build:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
-    - r-mass                     # [build_platform != target_platform]
     - r-rcpp                     # [build_platform != target_platform]
-    - r-rlang                    # [build_platform != target_platform]
-    - r-tidyselect               # [build_platform != target_platform]
     - r-rcppeigen                # [build_platform != target_platform]
-    - r-polyclip                 # [build_platform != target_platform]
-    - r-ggplot2                  # [build_platform != target_platform]
-    - r-withr                    # [build_platform != target_platform]
-    - r-scales                   # [build_platform != target_platform]
-    - r-gtable                   # [build_platform != target_platform]
-    - r-tweenr                   # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('cxx') }}            # [not win]
@@ -52,6 +43,7 @@ requirements:
     - r-polyclip
     - r-rlang
     - r-scales
+    - r-systemfonts
     - r-tidyselect
     - r-tweenr >=0.1.5
     - r-withr
@@ -66,6 +58,7 @@ requirements:
     - r-polyclip
     - r-rlang
     - r-scales
+    - r-systemfonts
     - r-tidyselect
     - r-tweenr >=0.1.5
     - r-withr
