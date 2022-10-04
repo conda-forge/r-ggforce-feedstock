@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggforce_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggforce/ggforce_{{ version }}.tar.gz
-  sha256: cd9b8740878ecc3ad6f3967dae08531d1564601037cb0e647e1cd752e38179f6
+  sha256: b44219fb63c45fa003c64bca323452f16dcace635204bc0127d3244c0f451873
 
 build:
   merge_build_host: true  # [win]
@@ -45,7 +45,7 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-ggplot2 >=3.0.0
+    - r-ggplot2 >=3.3.6
     - r-gtable
     - r-mass
     - r-polyclip
@@ -60,7 +60,7 @@ requirements:
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-ggplot2 >=3.0.0
+    - r-ggplot2 >=3.3.6
     - r-gtable
     - r-mass
     - r-polyclip
