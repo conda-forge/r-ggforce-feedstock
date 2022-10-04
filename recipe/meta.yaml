@@ -25,7 +25,7 @@ requirements:
     - r-ggplot2                    # [build_platform != target_platform]
     - r-gtable                     # [build_platform != target_platform]
     - r-mass                       # [build_platform != target_platform]
-    - r-ployclip                   # [build_platform != target_platform]
+    - r-polyclip                   # [build_platform != target_platform]
     - r-rcpp                       # [build_platform != target_platform]
     - r-rcppeigen                  # [build_platform != target_platform]
     - r-rlang                      # [build_platform != target_platform]
